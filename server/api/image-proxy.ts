@@ -5,7 +5,7 @@ import { defineEventHandler, getQuery, createError } from 'h3'
 import axios from 'axios'
 import sharp from 'sharp'
 
-const CACHE_DIR = join(process.cwd(), 'public', 'image-cache')
+const CACHE_DIR = '/tmp/image-cache'
 const CACHE_MAX_AGE = 31536000 // 1 year in seconds
 
 // 确保缓存目录存在
